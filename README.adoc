@@ -1,0 +1,32 @@
+= NetBeans Swing BOM
+:toc: left
+
+This is a Maven BOM with some Apache NetBeans specific artifacts that
+you can use in standalone Swing applications.
+
+== Suggested use
+
+Include this BOM in your POM file:
+
+[source, xml]
+----
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>net.vieiro.swing</groupId>
+            <artifactId>netbeans-swing-bom</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+----
+
+
+== License
+
+netbeans-swing-bom
+(C) 2020, 2021 Antonio Vieiro.
+Licensed under the Apache License v2. See link:LICENSE[LICENSE] for more information.
+
